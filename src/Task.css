@@ -1,0 +1,52 @@
+.task {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+  }
+  
+  .task input {
+    margin-right: 8px;
+  }
+  .task {
+    background-color: #f1f1f1;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task.completed {
+    background-color: #d1d1d1;
+  }
+  
+  .task label {
+    flex-grow: 1;
+    margin-left: 8px;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .task .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+  }
+  
+  .task .check-icon {
+    color: #00c200;
+    margin-left: 8px;
+  }
+  .task .edit-icon {
+    color: #007bff;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  
