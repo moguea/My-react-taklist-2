@@ -1,36 +1,41 @@
 import React, { useState } from 'react';
+import './AddTaskForm.css';
 
 const AddTaskForm = ({ handleTaskAdd }) => {
-  const [newTask, setNewTask] = useState('');
+  const [taskName, setTaskName] = useState('');
+  const [taskDescription, setTaskDescription] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newTask.trim() !== '') {
-      const task = {
-        id: Date.now(),
-        description: newTask,
-        completed: false
-      };
-      handleTaskAdd(task);
-      setNewTask('');
+    if (taskName.length >= 3) {
+      handleTaskAdd({ id: new Date().getTime(), name: taskName, description: taskDescription, completed: false });
+      setTaskName('');
+      setTaskDescription('');
     }
   };
 
-  const handleChange = (e) => {
-    setNewTask(e.target.value);
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="add-task-form" onSubmit={handleSubmit}>
       <input
+        className="add-task-input"
         type="text"
-        placeholder="Nueva tarea"
-        value={newTask}
-        onChange={handleChange}
+        placeholder="Nombre de la tarea"
+        value={taskName}
+        onChange={(e) => setTaskName(e.target.value)}
       />
-      <button type="submit">Agregar</button>
+      <input
+        className="add-task-input"
+        type="text"
+        placeholder="Descripción (opcional)"
+        value={taskDescription}
+        onChange={(e) => setTaskDescription(e.target.value)}
+      />
+      <button className="add-task-button" type="submit">
+        Agregar Tarea
+      </button>
     </form>
   );
 };
 
 export default AddTaskForm;
+

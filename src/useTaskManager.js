@@ -1,4 +1,3 @@
-// src/hooks/useTaskManager.js
 import { useState, useEffect } from 'react';
 
 const useTaskManager = () => {
@@ -29,4 +28,3 @@ const useTaskManager = () => {
 };
 
 export default useTaskManager;
-

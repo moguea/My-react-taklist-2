@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 const Task = ({ task, handleTaskToggle, handleTaskDelete }) => {
-  const { id, description, completed } = task;
+  const { id, name, completed } = task;
 
   const handleCheckboxChange = () => {
     handleTaskToggle(id);
@@ -25,7 +25,7 @@ const Task = ({ task, handleTaskToggle, handleTaskDelete }) => {
           checked={completed}
           onChange={handleCheckboxChange}
         />
-        {description}
+        {name}
       </label>
       <div>
         <FontAwesomeIcon icon={faEdit} className="edit-icon" />
