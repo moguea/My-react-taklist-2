@@ -20,5 +20,3 @@ const TaskList = ({ tasks, handleTaskToggle, handleTaskDelete }) => {
 };
 
 export default TaskList;
-
-

@@ -48,5 +48,13 @@
     margin-right: 8px;
     cursor: pointer;
   }
+  .task-details {
+    margin-left: 10px; /* o ajusta según sea necesario */
+  }
+  
+  .task-description {
+    font-weight: bold;
+    margin-top: 5px; /* o ajusta según sea necesario */
+  }
   
   

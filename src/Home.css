@@ -1,0 +1,26 @@
+/* Estilos para pantallas más grandes */
+.home-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #3498db; /* Borde azul */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .calendar-container {
+    margin-left: 600px; /* Ajusta el margen según sea necesario */
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media screen and (max-width: 600px) {
+    .home-container {
+      width: 100%;
+      max-width: 100%; /* O ajusta según sea necesario */
+    }
+  
+    .calendar-container {
+      margin-left: 0; /* Resetea el margen en pantallas pequeñas si es necesario */
+    }
+  }
+  

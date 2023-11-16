@@ -1,17 +1,22 @@
+// Menu.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Menu.css';
 
 const Menu = () => {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/tareas">Tareas</Link></li>
-        <li><Link to="/sobre-nosotros">Sobre Nosotros</Link></li>
-      </ul>
-    </nav>
+    <div className="menu-container">
+      <Link to="/" className="menu-item">
+        Home
+      </Link>
+      <Link to="/tareas" className="menu-item">
+        Tareas
+      </Link>
+      <Link to="/sobre-nosotros" className="menu-item">
+        Sobre Nosotros
+      </Link>
+    </div>
   );
 };
 
 export default Menu;
-

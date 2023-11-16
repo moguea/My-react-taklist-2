@@ -1,0 +1,16 @@
+/* Menu.css */
+.about-us-container {
+    border: 2px solid #3498db; /* Color del borde */
+    padding: 10px; /* Espaciado interno para dar espacio al borde */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+  }
+  
+  .about-us-title {
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .about-us-description {
+    /* Estilos adicionales para la descripción si es necesario */
+  }
+  

@@ -20,4 +20,21 @@
     border: none;
     cursor: pointer;
   }
-  
+ 
+  .bold-description {
+    font-weight: bold;
+  }
+  /* En AddTaskForm.css */
+.add-task-form {
+  box-shadow: 0 0 10px 2px #3498db; /* Agrega un resplandor azul neon */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.add-task-form:hover {
+  box-shadow: 0 0 20px 5px #3498db; /* Aumenta el resplandor al pasar el ratón */
+}
+
+/* Otros estilos... */

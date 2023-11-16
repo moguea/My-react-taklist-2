@@ -7,10 +7,17 @@ const AddTaskForm = ({ handleTaskAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (taskName.length >= 3) {
-      handleTaskAdd({ id: new Date().getTime(), name: taskName, description: taskDescription, completed: false });
+    if (taskName.length >= 3 && taskDescription.trim() !== '') {
+      handleTaskAdd({
+        id: new Date().getTime(),
+        name: taskName,
+        description: taskDescription,
+        completed: false,
+      });
       setTaskName('');
       setTaskDescription('');
+    } else {
+      alert('Por favor, ingresa un nombre de tarea válido y una descripción.');
     }
   };
 
@@ -24,9 +31,9 @@ const AddTaskForm = ({ handleTaskAdd }) => {
         onChange={(e) => setTaskName(e.target.value)}
       />
       <input
-        className="add-task-input"
+        className="add-task-input bold-description" // Agregamos una clase para aplicar estilos
         type="text"
-        placeholder="Descripción (opcional)"
+        placeholder="Descripción"
         value={taskDescription}
         onChange={(e) => setTaskDescription(e.target.value)}
       />
@@ -38,4 +45,3 @@ const AddTaskForm = ({ handleTaskAdd }) => {
 };
 
 export default AddTaskForm;
-

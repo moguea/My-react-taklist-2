@@ -1,0 +1,14 @@
+.menu-item {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Añade esta línea para quitar la línea debajo del botón */
+  }
+  
